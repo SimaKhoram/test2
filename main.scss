@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  direction: rtl;
+}
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.main-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// sass variables
+$color: (
+  headerlightcolor: lighten(rgb(26, 134, 98), 40%),
+  headerdarkcolor: rgb(26, 134, 98),
+  footerlightcolor: lighten(rgb(70, 61, 61), 50%),
+  footerdarkcolor: rgb(70, 61, 61),
+);
+@function color($color-name) {
+  @return map-get($color, $color-name);
+}
+
+/* header */
+/* top header */
+.top-header {
+  background-color: color(headerlightcolor);
+
+  .date {
+    float: right;
+    width: 80%;
+  }
+  .about-us {
+    float: left;
+    width: 20%;
+    text-align: left;
+  }
+}
+
+/* main header */
+.main-header {
+  background-color: color(headerdarkcolor);
+
+  .logo-header {
+    float: right;
+    width: 30%;
+  }
+  .social-header {
+    float: left;
+    width: 70%;
+    text-align: left;
+  }
+}
+
+/* header bottom */
+.header-bottom {
+  background-color: color(headerlightcolor);
+  margin-bottom: 16px;
+}
+
+/* main */
+/* right col */
+@media screen and (min-width: 992px) {
+  .right-col {
+    float: right;
+    width: 75%;
+    padding-left: 16px;
+  }
+}
+.top-news {
+  background-color: green;
+  margin-bottom: 16px;
+}
+.inner-right-col {
+  background-color: rgb(143, 132, 39);
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 992px) {
+  .inner-right-col {
+    float: right;
+    width: 50%;
+  }
+}
+.inner-left-col {
+  background-color: rgb(189, 173, 33);
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 992px) {
+  .inner-left-col {
+    float: left;
+    width: 50%;
+  }
+}
+.others-in-right-col {
+  background-color: rgb(33, 108, 133);
+  margin-bottom: 16px;
+}
+/* left col */
+.left-col {
+  background-color: greenyellow;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 992px) {
+  .left-col {
+    float: left;
+    width: 25%;
+  }
+}
+/* footer */
+footer {
+  .logo-line {
+    background-color: color(footerlightcolor);
+    color: white;
+  }
+  .social-line {
+    background-color: color(footerdarkcolor);
+    color: white;
+  }
+  .footer-menu {
+    background-color: color(footerlightcolor);
+    color: white;
+    text-align: center;
+  }
+  .last-footer {
+    background-color: color(footerdarkcolor);
+    color: white;
+  }
+  .copyright {
+    float: right;
+    width: 60%;
+  }
+  .aasaam {
+    float: left;
+    width: 40%;
+    text-align: left;
+  }
+}

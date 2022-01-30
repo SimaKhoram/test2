@@ -1,0 +1,155 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+}
+
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.main-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* header */
+/* top header */
+.top-header {
+  background-color: #85e7c6;
+}
+
+.top-header .date {
+  float: right;
+  width: 80%;
+}
+
+.top-header .about-us {
+  float: left;
+  width: 20%;
+  text-align: left;
+}
+
+/* main header */
+.main-header {
+  background-color: #1a8662;
+}
+
+.main-header .logo-header {
+  float: right;
+  width: 30%;
+}
+
+.main-header .social-header {
+  float: left;
+  width: 70%;
+  text-align: left;
+}
+
+/* header bottom */
+.header-bottom {
+  background-color: #85e7c6;
+  margin-bottom: 16px;
+}
+
+/* main */
+/* right col */
+@media screen and (min-width: 992px) {
+  .right-col {
+    float: right;
+    width: 75%;
+    padding-left: 16px;
+  }
+}
+
+.top-news {
+  background-color: green;
+  margin-bottom: 16px;
+}
+
+.inner-right-col {
+  background-color: #8f8427;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 992px) {
+  .inner-right-col {
+    float: right;
+    width: 50%;
+  }
+}
+
+.inner-left-col {
+  background-color: #bdad21;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 992px) {
+  .inner-left-col {
+    float: left;
+    width: 50%;
+  }
+}
+
+.others-in-right-col {
+  background-color: #216c85;
+  margin-bottom: 16px;
+}
+
+/* left col */
+.left-col {
+  background-color: greenyellow;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 992px) {
+  .left-col {
+    float: left;
+    width: 25%;
+  }
+}
+
+/* footer */
+footer .logo-line {
+  background-color: #c5bdbd;
+  color: white;
+}
+
+footer .social-line {
+  background-color: #463d3d;
+  color: white;
+}
+
+footer .footer-menu {
+  background-color: #c5bdbd;
+  color: white;
+  text-align: center;
+}
+
+footer .last-footer {
+  background-color: #463d3d;
+  color: white;
+}
+
+footer .copyright {
+  float: right;
+  width: 60%;
+}
+
+footer .aasaam {
+  float: left;
+  width: 40%;
+  text-align: left;
+}
+/*# sourceMappingURL=main.css.map */
